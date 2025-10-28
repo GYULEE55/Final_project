@@ -1,0 +1,24 @@
+=== SRNet 모델 제출 방법 ===
+
+1. 터미널에서 실행:
+   cd /home/lee/Final_project/submit_srnet
+   jupyter notebook
+
+2. 새 브라우저 창에서 task.ipynb 열기
+
+3. Kernel -> Restart & Run All 실행
+
+4. 마지막 셀(Section 10)까지 실행되면 자동 제출됩니다.
+
+===
+
+현재 디렉토리 구조:
+submit_srnet/
+├── task.ipynb
+└── model/
+    └── srnet-steganalysis-model/
+        ├── srnet_model_light.pth (44MB)
+        ├── model_config.pkl
+        └── ycbcr_stats.pkl
+
+총 크기: 44MB (업로드 약 2-3분 예상)
