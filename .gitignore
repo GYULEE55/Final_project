@@ -1,0 +1,33 @@
+# 대용량 파일 제외
+*.zip
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# 모델 파일 제외
+deepfake_vit_final/
+deepfake_vit_model/
+deepfake_submit.zip/
+baseline/model/
+
+# 데이터 파일 제외
+original/
+pixelcnn_model/
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook 체크포인트
+.ipynb_checkpoints/
+
+# 로그
+*.log
+logs/
+
+# 환경 설정
+.env
+.venv/
+venv/
