@@ -8,7 +8,8 @@
 # 모델 파일 제외
 deepfake_vit_final/
 deepfake_vit_model/
-deepfake_submit.zip/
+deepfake_submit.zip/*
+!deepfake_submit.zip/task.ipynb
 baseline/model/
 
 # 데이터 파일 제외
