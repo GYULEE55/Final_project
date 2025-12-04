@@ -1,10 +1,25 @@
-# FaceGuard:  개인용 실시간 딥페이크 탐지 웹페이지
+<div align="center">
+
+# 🛡️ FaceGuard
+
+### 설명 가능한 AI 기반 딥페이크 탐지 시스템
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-FF4B4B.svg)](https://streamlit.io/)
 
-> **FSFM+ArcFace 기반 얼굴 위변조 탐지 및 XAI 시각화**
+### 🎯 핵심 성과
+
+```
+베이스라인 대비 90.7% 성능 향상 (F1: 43% → 82%)
+30+ 논문 리뷰 기반 연구 설계
+한국인 특화 데이터셋 5,000장 구축
+실시간 XAI 시각화 웹 플랫폼 구현
+```
+
+**FSFM+ArcFace 기반 얼굴 위변조 탐지 및 Grad-CAM 시각화**
+
+</div>
 
 ---
 
@@ -44,15 +59,15 @@
 - **기반 기술**: StyleGAN, ArcFace, Grad-CAM
 - **법적/사회적**: EU AI Act, Europol Deepfake Report
 
-### 본 연구의 기여
+### 💡 본 연구의 차별점
 
-| 구분 | 기존 연구 | 본 연구 |
+| 구분 | 기존 연구 | 🚀 본 연구 |
 |------|----------|---------|
-| **모델** | ViT 기반 범용 모델 | FSFM + ArcFace 얼굴 특화 |
-| **데이터** | FaceForensics++ (외국인 중심) | StyleGAN-K 한국인 데이터 추가 |
-| **후처리** | 단일 프레임 분석 | Top-K + Auto-Threshold |
-| **설명성** | Class Activation Map | Grad-CAM + 신뢰도 추이 |
-| **성능** | Macro F1 0.49 | Macro F1 0.823 (+68.4%) |
+| **모델** | ViT 기반 범용 모델 | **FSFM + ArcFace 얼굴 특화** |
+| **데이터** | FaceForensics++ (외국인 중심) | **StyleGAN-K 한국인 데이터 추가** |
+| **후처리** | 단일 프레임 분석 | **Top-K + Auto-Threshold** |
+| **설명성** | Class Activation Map | **Grad-CAM + 신뢰도 추이** |
+| **성능** | Macro F1 0.49 | **✨ Macro F1 0.823 (+68.4%)** |
 
 ---
 
@@ -99,7 +114,11 @@
 - ✅ 전역 정보에는 강하지만, **고주파(High-frequency) 아티팩트·경계 이상치 감지**에 취약
 - ✅ 균일 패치 처리 방식 때문에 **눈·입 주변의 위조 흔적 (블러·경계 깨짐)** 을 놓칠 가능성 높음
 
-**해결 방안**: FSFM (얼굴 특화 모델) + ArcFace로 전환 → **+68.4% 성능 향상**
+### 💡 해결 방안
+
+> **FSFM (얼굴 특화 모델) + ArcFace로 전환**
+>
+> ## 🎯 결과: **성능 68.4% 향상**
 
 ---
 
@@ -152,12 +171,19 @@
 
 | 단계 | 모델/기법 | Macro F1 | 주요 개선 사항 |
 |------|-----------|----------|---------------|
-| **Baseline** | ViT (불균형) | 0.38 | - |
-| **V1** | ViT (균형) + 얼굴 특화 베이스라인 | **0.60** | ViT→FSFM ViT-B 전환, 얼굴·아티팩트 특화 학습 (+43→60%) |
-| **V2** | FSFM + 학습 안정화 | **0.74** | LR/ArcFace 마진 조정, Gradient Clipping, 불균형 보정 (+60→74%) |
-| **V3** | 파이프라인 고도화 | **0.82** | RetinaFace strict crop + Top-K 영상 선택 + Auto-Threshold (+74→82%) |
+| Baseline | ViT (불균형) | 0.38 | - |
+| V1 | 얼굴 특화 베이스라인 | **0.60** | ViT→FSFM ViT-B 전환 |
+| V2 | 학습 안정화 | **0.74** | LR/ArcFace 마진 조정, Gradient Clipping |
+| **✨ V3** | **파이프라인 고도화** | **🎯 0.82** | **Top-K + Auto-Threshold** |
 
-**최종 성능**: 베이스라인 대비 **약 90.7% 향상** (43% → 82%)
+<div align="center">
+
+## 🏆 최종 성과
+
+### 베이스라인 대비 **90.7% 성능 향상**
+### Macro F1-Score: **43% → 82%**
+
+</div>
 
 ---
 
@@ -202,7 +228,10 @@
 
 ## 📚 참고문헌
 
-본 연구는 **30개 이상의 최신 논문**을 리뷰하여 수행되었습니다:
+> **30개 이상의 최신 논문**을 체계적으로 리뷰하여 연구 설계
+
+<details>
+<summary><b>📖 주요 참고 문헌 보기</b></summary>
 
 - **데이터셋**: FaceForensics++, Celeb-DF, DFDC, KoDF
 - **탐지 모델**: FSFM, ViT, Xception, EfficientNet
@@ -210,6 +239,8 @@
 - **멀티모달**: Audio-Visual Fusion, Vision-Language Models
 - **서베이**: Deepfake Meta-Review, Multimedia Survey
 - **법적/사회적**: EU AI Act, Europol Report
+
+</details>
 
 ---
 
