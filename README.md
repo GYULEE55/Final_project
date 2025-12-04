@@ -63,7 +63,7 @@
 11가지 딥페이크 탐지 모델을 **공간/시간/주파수** 관점에서 벤치마킹:
 
 <p align="center">
-  <img src="images/image copy 5.png" alt="모델 조사 기반" width="800"/>
+  <img src="final_deepfake/images/image copy 5.png" alt="모델 조사 기반" width="800"/>
 </p>
 
 **선정 과정**:
@@ -73,7 +73,7 @@
 - **주파수/학률**: PixelCNN
 
 <p align="center">
-  <img src="images/image copy 8.png" alt="베이스라인 모델 성능" width="700"/>
+  <img src="final_deepfake/images/image copy 8.png" alt="베이스라인 모델 성능" width="700"/>
 </p>
 
 **최종 선정**: **ViT (Vision Transformer)**
@@ -81,7 +81,7 @@
 - Celeb-DF: AUC 0.482 (일반화 한계 발견)
 
 <p align="center">
-  <img src="images/image copy 6.png" alt="모델 한계성 분석" width="750"/>
+  <img src="final_deepfake/images/image copy 6.png" alt="모델 한계성 분석" width="750"/>
 </p>
 
 > **"같은 구조의 CNN 모델이라도 훈련 데이터셋을 벗어나는 순간 성능이 무너진다."**
@@ -91,7 +91,7 @@
 ### ViT 베이스라인의 구조적 한계
 
 <p align="center">
-  <img src="images/image.png" alt="ViT 구조적 한계" width="850"/>
+  <img src="final_deepfake/images/image.png" alt="ViT 구조적 한계" width="850"/>
 </p>
 
 **발견된 문제점**:
@@ -108,7 +108,7 @@
 ### StyleGAN-K 기반 한국인 데이터 생성
 
 <p align="center">
-  <img src="images/image copy 7.png" alt="StyleGAN 한국인 데이터 생성" width="500"/>
+  <img src="final_deepfake/images/image copy 7.png" alt="StyleGAN 한국인 데이터 생성" width="500"/>
 </p>
 
 **생성 과정**:
@@ -131,7 +131,7 @@
 ### 학습 파이프라인
 
 <p align="center">
-  <img src="images/image copy 2.png" alt="학습 파이프라인" width="900"/>
+  <img src="final_deepfake/images/image copy 2.png" alt="학습 파이프라인" width="900"/>
 </p>
 
 **파이프라인 구성**:
@@ -141,13 +141,13 @@
 ### 성능 개선 과정
 
 <p align="center">
-  <img src="images/image copy 4.png" alt="성능 개선 그래프" width="750"/>
+  <img src="final_deepfake/images/image copy 4.png" alt="성능 개선 그래프" width="750"/>
 </p>
 
 #### 단계별 개선 내역
 
 <p align="center">
-  <img src="images/image copy 9.png" alt="파인튜닝 3단계" width="900"/>
+  <img src="final_deepfake/images/image copy 9.png" alt="파인튜닝 3단계" width="900"/>
 </p>
 
 | 단계 | 모델/기법 | Macro F1 | 주요 개선 사항 |
@@ -166,7 +166,7 @@
 ### 핵심 6가지 기능
 
 <p align="center">
-  <img src="images/image copy 3.png" alt="FaceGuard Vision 핵심 기능" width="900"/>
+  <img src="final_deepfake/images/image copy 3.png" alt="FaceGuard Vision 핵심 기능" width="900"/>
 </p>
 
 **01. 조작 부분 시각화 (히트맵)**
@@ -190,7 +190,7 @@
 ### 결과 화면
 
 <p align="center">
-  <img src="images/image copy.png" alt="실제 분석 결과 화면" width="900"/>
+  <img src="final_deepfake/images/image copy.png" alt="실제 분석 결과 화면" width="900"/>
 </p>
 
 **AI 분석 결과**: 정상적인 실제 이미지로 확인되었습니다
