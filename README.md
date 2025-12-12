@@ -247,7 +247,6 @@
 - **XAI**: Grad-CAM, Active Illumination
 - **멀티모달**: Audio-Visual Fusion, Vision-Language Models
 - **서베이**: Deepfake Meta-Review, Multimedia Survey
-- **법적/사회적**: EU AI Act, Europol Report
 
 </details>
 
