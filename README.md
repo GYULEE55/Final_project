@@ -13,29 +13,20 @@
   <img src="final_deepfake/images/image copy 10.png" width="880" alt="Validation Macro F1 (internal vs external)"/>
 </p>
 
-📊 [Val_internal] Macro F1=0.9580 | Acc=0.9675
+📊 [val data] Macro F1=0.9580 | Acc=0.9675
               precision    recall  f1-score   support
 
      Real(0)      0.917     0.960     0.938      5516
      Fake(1)      0.986     0.970     0.978     15992
 
-    accuracy                          0.968     21508
-   macro avg      0.952     0.965     0.958     21508
-weighted avg      0.968     0.968     0.968     21508
-
 --------------------------------------------------------------------------------
 
-📊 [Val_external] Macro F1=0.8227 | Acc=0.8776
+📊 [Unseen data] Macro F1=0.8227 | Acc=0.8776
               precision    recall  f1-score   support
 
      Real(0)      0.583     0.957     0.724       391
      Fake(1)      0.990     0.862     0.921      1937
-
-    accuracy                          0.878      2328
-   macro avg      0.786     0.909     0.823      2328
-weighted avg      0.921     0.878     0.888      2328
-
-**FSFM+ArcFace 기반 얼굴 위변조 탐지 및 Grad-CAM 시각화**
+     
 
 </div>
 
