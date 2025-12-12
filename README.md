@@ -9,13 +9,31 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-FF4B4B.svg)](https://streamlit.io/)
 
 ### 🎯 핵심 성과
+<p align="center">
+  <img src="final_deepfake/images/image copy 10.png" width="880" alt="Validation Macro F1 (internal vs external)"/>
+</p>
 
-```
-베이스라인 대비 90.7% 성능 향상 (F1: 43% → 82%)
-30+ 논문 리뷰 기반 연구 설계
-한국인 특화 데이터셋 5,000장 구축
-실시간 XAI 시각화 웹 플랫폼 구현
-```
+📊 [Val_internal] Macro F1=0.9580 | Acc=0.9675
+              precision    recall  f1-score   support
+
+     Real(0)      0.917     0.960     0.938      5516
+     Fake(1)      0.986     0.970     0.978     15992
+
+    accuracy                          0.968     21508
+   macro avg      0.952     0.965     0.958     21508
+weighted avg      0.968     0.968     0.968     21508
+
+--------------------------------------------------------------------------------
+
+📊 [Val_external] Macro F1=0.8227 | Acc=0.8776
+              precision    recall  f1-score   support
+
+     Real(0)      0.583     0.957     0.724       391
+     Fake(1)      0.990     0.862     0.921      1937
+
+    accuracy                          0.878      2328
+   macro avg      0.786     0.909     0.823      2328
+weighted avg      0.921     0.878     0.888      2328
 
 **FSFM+ArcFace 기반 얼굴 위변조 탐지 및 Grad-CAM 시각화**
 
