@@ -2,7 +2,7 @@
 
 # 🛡️ FaceGuard
 
-### 설명 가능한 AI 기반 딥페이크 탐지 시스템
+### 설명 가능한 AI 기반 딥페이크 탐지 웹페이지
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.6+-ee4c2c.svg)](https://pytorch.org/)
